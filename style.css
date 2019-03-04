@@ -2,15 +2,16 @@
 
 #container {
   width:50%;
-  height:520px;
+  height:70vh;
   padding-top:100px;
+  padding-bottom:100px;
   background-image: linear-gradient(to bottom, #2C7AC4 , #18436B);
   margin: auto;
 }
 @media only screen and (max-width: 1000px) {
-    #container {
-        width:100%;
-    }
+  #container {
+      width:100%;
+  }
   #ekran{
     width:70%;
   }
@@ -20,7 +21,7 @@
 }
 
 #ekran {
-  width:50%;
+  width:60%;
   height:50px;
   line-height:50px;
   text-align:right;
@@ -35,7 +36,7 @@
 }
 
 #tuslar {
-  width:50%;
+  width:60%;
   height:auto;
   margin:auto;
   position:relative;

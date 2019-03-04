@@ -3,7 +3,7 @@ function yazdir(sayi){
   if(isIslemDefine)
     document.getElementById("ekran").innerHTML = "";
   
-  isIslemDefine = 0;
+  isIslemDefine = false;
   document.getElementById("ekran").innerHTML += sayi;
 }
 
@@ -42,25 +42,21 @@ function esittir(){
   switch(islemText){
     case "+":
       document.getElementById("ekran").innerHTML = ilkSayi+ikinciSayi;
-      isIslemDefine = false;
       break;
     case "-":
       document.getElementById("ekran").innerHTML = ilkSayi-ikinciSayi;
-      isIslemDefine = false;
       break;
     case "x":
       document.getElementById("ekran").innerHTML = ilkSayi*ikinciSayi;
-      isIslemDefine = false;
       break;
     case "/":
       document.getElementById("ekran").innerHTML = ilkSayi / ikinciSayi;
-      isIslemDefine = false;
       break;
     case "%":
       document.getElementById("ekran").innerHTML = ilkSayi * ikinciSayi / 100;
-      isIslemDefine = false;
       break;
   }
+  isIslemDefine = true;
   ilkSayi = "";
   ikiniSayi = "";
 }
